@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import { Dosis } from "next/font/google";
 import "../styles/globals.css";
-import OfferTopBanner from "@/components/layout/OfferTopBanner";
+import PromotionalBanner from "@/components/layout/PromotionalBanner";
 import Header from "@/components/layout/Header";
 
 const figtree = Figtree({
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={figtree.className}>
       <body className={`antialiased`}>
-        <OfferTopBanner/>
+        <PromotionalBanner/>
         <Header/>
         {children}
       </body>
