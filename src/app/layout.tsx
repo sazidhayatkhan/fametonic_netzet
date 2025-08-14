@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Figtree } from "next/font/google";
+import { Dosis } from "next/font/google";
 import "../styles/globals.css";
+import OfferTopBanner from "@/components/layout/OfferTopBanner";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const figtree = Figtree({
+  subsets: ['latin'],
+})
+const dosis = Dosis({
+  subsets: ['latin'],
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Fametonic",
@@ -23,10 +23,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className={figtree.className}>
+      <body className={`antialiased`}>
+        <OfferTopBanner/>
         {children}
       </body>
     </html>
