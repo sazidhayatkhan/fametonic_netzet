@@ -3,6 +3,7 @@ import { Figtree } from "next/font/google";
 import { Dosis } from "next/font/google";
 import "../styles/globals.css";
 import OfferTopBanner from "@/components/layout/OfferTopBanner";
+import Header from "@/components/layout/Header";
 
 const figtree = Figtree({
   subsets: ['latin'],
@@ -26,6 +27,7 @@ export default function RootLayout({
     <html lang="en" className={figtree.className}>
       <body className={`antialiased`}>
         <OfferTopBanner/>
+        <Header/>
         {children}
       </body>
     </html>
