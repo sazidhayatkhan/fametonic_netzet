@@ -22,7 +22,7 @@ const Header = () => {
         {/* Mobile Menu Button */}
         <div className="absolute right-[20px] block md:hidden">
           <button>
-            <FiMenu size={24} />
+            <FiMenu size={22} />
           </button>
         </div>
 
