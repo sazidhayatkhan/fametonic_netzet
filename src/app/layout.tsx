@@ -1,16 +1,8 @@
 import type { Metadata } from "next";
-import { Figtree } from "next/font/google";
-import { Dosis } from "next/font/google";
+import { figtree } from "@/fonts/fonts";
 import "../styles/globals.css";
 import PromotionalBanner from "@/components/layout/PromotionalBanner";
 import Header from "@/components/layout/Header";
-
-const figtree = Figtree({
-  subsets: ['latin'],
-})
-const dosis = Dosis({
-  subsets: ['latin'],
-})
 
 
 export const metadata: Metadata = {

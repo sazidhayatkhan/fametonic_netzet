@@ -6,7 +6,7 @@ import { FiMenu } from "react-icons/fi";
 
 const Header = () => {
   return (
-    <header className="container mt-4 md:mt-8">
+    <header className="container my-4 md:my-8">
       <div className="flex w-full items-center md:items-start justify-center md:justify-between relative">
         <Link href="/" className="cursor-pointer">
           <Image
