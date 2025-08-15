@@ -1,7 +1,7 @@
 import React from "react";
 import { urbanist } from "@/fonts/fonts";
 import Image from "next/image";
-
+import { descData } from "@/data/heroDescData";
 const HomePage = () => {
   return (
     <>
@@ -23,12 +23,18 @@ const HomePage = () => {
               Discover your way to success with Fametonic:
             </p>
           </div>
+          <div className="space-y-3 mt-4">
+            {
+              descData?.map((item,i:number)=>(
+                <p key={i} className="flex justify-start items-center gap-1">
+                  <span className="text-xl md:text-lg">✨</span>
+                  <span className="text-base font-medium md:font-semibold">{item?.desc}</span>
+                </p>
+              ))
+            }
+          </div>
           <div>
-            <p>✨ Start growing your influence right away—no waiting required!</p>
-            <p>✨ Start growing your influence right away—no waiting required!</p>
-            <p>✨ Start growing your influence right away—no waiting required!</p>
-            <p>✨ Start growing your influence right away—no waiting required!</p>
-            
+            <button className="bg-[#FC004E] text-white text-xl font-bold px-32">GET STARTED<span></span></button>
           </div>
         </div>
         <div className="order-1 md:order-2 max-w-[19rem] md:max-w-full mx-auto">
