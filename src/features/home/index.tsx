@@ -39,7 +39,7 @@ const HomePage = () => {
         </div>
         <div className="order-1 md:order-2 max-w-[19rem] md:max-w-full mx-auto">
           <Image
-            src="/images/hero_img.png"
+            src="/images/hero_img.webp"
             alt="hero_img"
             width={666}
             height={679}
