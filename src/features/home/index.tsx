@@ -17,7 +17,7 @@ const HomePage = () => {
             <p
               style={{
                 color: "#00E7F9",
-                textShadow: "0px 4px 4px 0px #FC004E",
+                textShadow: "0px 4px 4px #FC004E",
               }}
               className={`${urbanist.className} text-2xl md:text-4xl font-extrabold md:font-bold text-center md:text-start max-w-[21rem] md:max-w-full mx-auto md:mx-0`}
             >
