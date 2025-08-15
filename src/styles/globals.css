@@ -9,7 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 @theme {
-  --text-2xl:25px;
   --text-4xl: 35px;
 }
 /*
