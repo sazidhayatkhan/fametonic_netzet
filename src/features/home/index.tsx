@@ -43,7 +43,7 @@ const HomePage = () => {
             alt="hero_img"
             width={666}
             height={679}
-            // 376px
+            priority
             className="w-full aspect-[12/11] object-cover"
           />
         </div>
