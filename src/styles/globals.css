@@ -5,6 +5,11 @@
   --background: #010101;
   --foreground: #ffffff;
 }
+
+@theme {
+  --text-2xl:25px;
+  --text-4xl: 35px;
+}
 /*
 
 @theme inline {
@@ -31,9 +36,14 @@ body {
   margin-inline: auto;
 }
 
+
+
+
+
+
 @media (max-width: 768px) {
   .container {
-    max-width: 100%;
-    padding-inline: 3%;
+    max-width: 90%;
+    padding-inline: 0%;
   }
 }

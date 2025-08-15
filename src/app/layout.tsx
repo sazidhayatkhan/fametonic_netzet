@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={figtree.className}>
-      <body className={`antialiased`}>
+      <body className={`antialiased scrollbar`}>
         <PromotionalBanner/>
         <Header/>
         {children}
