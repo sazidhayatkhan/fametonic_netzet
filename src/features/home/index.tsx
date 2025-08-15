@@ -29,7 +29,7 @@ const HomePage = () => {
           width={666} // intrinsic size
           height={679} // intrinsic size
           // 376px
-          className="w-full aspect-[12/11] object-cover border border-red-500"
+          className="w-full aspect-[12/11] object-cover"
         />
       </div>
     </div>
