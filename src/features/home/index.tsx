@@ -6,7 +6,7 @@ import { descData } from "@/data/heroDescData";
 const HomePage = () => {
   return (
     <>
-      <div className="container grid grid-cols-1 md:grid-cols-2 items-center">
+      <div className="container grid grid-cols-1 md:grid-cols-2 items-center pb-6">
         <div className="order-2 md:order-1">
           <div className="">
             <h2
