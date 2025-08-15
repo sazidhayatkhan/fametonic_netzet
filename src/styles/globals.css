@@ -5,7 +5,9 @@
   --background: #010101;
   --foreground: #ffffff;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 @theme {
   --text-2xl:25px;
   --text-4xl: 35px;
