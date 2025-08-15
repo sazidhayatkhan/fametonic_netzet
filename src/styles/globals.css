@@ -32,13 +32,9 @@ body {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1020px;
   margin-inline: auto;
 }
-
-
-
-
 
 
 @media (max-width: 768px) {
