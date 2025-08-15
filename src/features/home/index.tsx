@@ -7,9 +7,9 @@ const HomePage = () => {
     <>
       <div className="container grid grid-cols-1 md:grid-cols-2 items-center">
         <div className="order-2 md:order-1">
-          <div className="px-2 md:px-0">
+          <div className="">
             <h2
-              className={`${urbanist.className} text-2xl md:text-4xl font-extrabold md:font-bold text-center md:text-start`}
+              className={`${urbanist.className} text-2xl md:text-4xl font-extrabold md:font-bold text-center md:text-start max-w-[19rem] md:max-w-full mx-auto md:mx-0`}
             >
               Want to Turn Social Media Into a Profitable Career?
             </h2>
@@ -18,7 +18,7 @@ const HomePage = () => {
                 color: "#00E7F9",
                 textShadow: "0px 4px 4px #FC004E",
               }}
-              className={`${urbanist.className} text-2xl md:text-4xl font-extrabold md:font-bold text-center md:text-start`}
+              className={`${urbanist.className} text-2xl md:text-4xl font-extrabold md:font-bold text-center md:text-start max-w-[21rem] md:max-w-full mx-auto md:mx-0`}
             >
               Discover your way to success with Fametonic:
             </p>
@@ -31,7 +31,7 @@ const HomePage = () => {
             
           </div>
         </div>
-        <div className="order-1 md:order-2 px-4 md:px-0">
+        <div className="order-1 md:order-2 max-w-[19rem] md:max-w-full mx-auto">
           <Image
             src="/images/hero_img.png"
             alt="hero_img"
