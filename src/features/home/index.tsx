@@ -1,8 +1,8 @@
 import React from "react";
-import { urbanist } from "@/fonts/fonts";
+import { urbanist,nunito } from "@/fonts/fonts";
 import Image from "next/image";
 import { descData } from "@/data/heroDescData";
-import { FaAngleRight } from "react-icons/fa6";
+
 const HomePage = () => {
   return (
     <>
@@ -51,7 +51,10 @@ const HomePage = () => {
                 By clicking "Get Started", you agree with Terms and Conditions,
                 Privacy Policy, Subscription Terms
               </p>
-              <p className="text-[10px] font-medium text-[#ABABAB] text-center md:text-start">
+              <p className={`block md:hidden ${nunito.className} text-[10px] font-medium text-[#ABABAB] text-center`}>
+                Fametonic 2025 ©All Rights Reserved.
+              </p>
+              <p className={`hidden md:block ${urbanist.className} text-[10px] font-medium text-[#ABABAB] text-start`}>
                 Fametonic 2025 ©All Rights Reserved.
               </p>
             </div>
