@@ -29,7 +29,7 @@ const HomePage = () => {
         <div className="relative z-20 pt-0 md:pt-8 max-w-full md:max-w-[33rem]">
           <div className="">
             <h2
-              className={`${urbanist.className} text-2xl md:text-4xl leading-10 font-extrabold md:font-bold text-center md:text-start max-w-[19rem] md:max-w-full mx-auto md:mx-0`}
+              className={`${urbanist.className} text-2xl md:text-4xl leading-8 md:leading-10 font-extrabold md:font-bold text-center md:text-start max-w-[19rem] md:max-w-full mx-auto md:mx-0`}
             >
               Want to Turn Social Media Into a Profitable Career?
             </h2>
@@ -38,7 +38,7 @@ const HomePage = () => {
                 color: "#00E7F9",
                 textShadow: "0px 4px 4px #FC004E",
               }}
-              className={`${urbanist.className} text-2xl md:text-4xl leading-10 font-extrabold md:font-bold text-center md:text-start max-w-[21rem] md:max-w-full mx-auto md:mx-0`}
+              className={`${urbanist.className} text-2xl md:text-4xl leading-7 md:leading-10 font-extrabold md:font-bold text-center md:text-start max-w-[21rem] md:max-w-full mx-auto md:mx-0`}
             >
               Discover your way to success with Fametonic:
             </p>
