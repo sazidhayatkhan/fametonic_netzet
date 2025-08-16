@@ -5,15 +5,7 @@ import { descData } from "@/data/heroDescData";
 
 const HomePage = () => {
   return (
-    //  style={{
-    //       backgroundImage: `
-    //   url('/images/bg.jpg')
-    // `,
-    //       backgroundSize: "cover",
-    //       backgroundPosition: "center",
-    //     }}
-      <div className="container grid grid-cols-1 md:grid-cols-2 items-center relative"
-      >
+      <div className="container relative">
         <div className="block md:hidden max-w-[19rem] mx-auto">
           <Image
             src="/images/hero_img.webp"
@@ -24,7 +16,17 @@ const HomePage = () => {
             className="w-full aspect-[12/11] object-cover"
           />
         </div>
-        <div className="pt-0 md:pt-4 z-20">
+        <div className="z-10 hidden md:block absolute top-[-70px] right-[-103px]">
+          <Image
+            src="/images/hero_img.webp"
+            alt="hero_img"
+            width={666}
+            height={679}
+            priority
+            className="w-full h-[679px] object-cover"
+          />
+        </div>
+        <div className="relative z-20 pt-0 md:pt-8 max-w-full md:max-w-[33rem]">
           <div className="">
             <h2
               className={`${urbanist.className} text-2xl md:text-4xl font-extrabold md:font-bold text-center md:text-start max-w-[19rem] md:max-w-full mx-auto md:mx-0`}
@@ -87,16 +89,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="hidden md:block z-10 absolute top-[-70px] right-[-110px]">
-          <Image
-            src="/images/hero_img.webp"
-            alt="hero_img"
-            width={666}
-            height={679}
-            priority
-            className="w-full h-[679px] object-cover"
-          />
-        </div>
+        
       </div>
   );
 };
