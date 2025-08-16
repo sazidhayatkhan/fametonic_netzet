@@ -16,7 +16,7 @@ const HomePage = () => {
             className="w-full aspect-[12/11] object-cover"
           />
         </div>
-        <div className="z-10 hidden md:block absolute top-[-70px] right-[-100px]">
+        <div className="z-10 hidden md:block absolute top-[-70px] right-[-105px]">
           <Image
             src="/images/hero_img.webp"
             alt="hero_img"
@@ -45,7 +45,7 @@ const HomePage = () => {
           </div>
           <div className="space-y-3 mt-4">
             {descData?.map((item, i: number) => (
-              <p key={i} className="flex justify-start items-center gap-1">
+              <p key={i} className="flex justify-start items-center gap-2">
                 <span className="text-xl md:text-lg">✨</span>
                 <span className="text-base font-medium md:font-semibold">
                   {item?.desc}
@@ -71,7 +71,7 @@ const HomePage = () => {
                 1-minute quiz for personalized Insights
               </p>
             </div>
-            <div className="order-1 md:order-2 space-y-5 md:space-y-2">
+            <div className="order-1 md:order-2 space-y-5 md:space-y-3">
               <p className="text-xs font-medium text-[#ABABAB] text-center md:text-start max-w-[21rem] md:max-w-full mx-auto">
                 By clicking "Get Started", you agree with Terms and Conditions,
                 Privacy Policy, Subscription Terms
