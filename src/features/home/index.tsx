@@ -16,7 +16,7 @@ const HomePage = () => {
             className="w-full aspect-[12/11] object-cover"
           />
         </div>
-        <div className="z-10 hidden md:block absolute top-[-70px] right-[-103px]">
+        <div className="z-10 hidden md:block absolute top-[-70px] right-[-100px]">
           <Image
             src="/images/hero_img.webp"
             alt="hero_img"
@@ -29,7 +29,7 @@ const HomePage = () => {
         <div className="relative z-20 pt-0 md:pt-8 max-w-full md:max-w-[33rem]">
           <div className="">
             <h2
-              className={`${urbanist.className} text-2xl md:text-4xl font-extrabold md:font-bold text-center md:text-start max-w-[19rem] md:max-w-full mx-auto md:mx-0`}
+              className={`${urbanist.className} text-2xl md:text-4xl leading-10 font-extrabold md:font-bold text-center md:text-start max-w-[19rem] md:max-w-full mx-auto md:mx-0`}
             >
               Want to Turn Social Media Into a Profitable Career?
             </h2>
@@ -38,7 +38,7 @@ const HomePage = () => {
                 color: "#00E7F9",
                 textShadow: "0px 4px 4px #FC004E",
               }}
-              className={`${urbanist.className} text-2xl md:text-4xl font-extrabold md:font-bold text-center md:text-start max-w-[21rem] md:max-w-full mx-auto md:mx-0`}
+              className={`${urbanist.className} text-2xl md:text-4xl leading-10 font-extrabold md:font-bold text-center md:text-start max-w-[21rem] md:max-w-full mx-auto md:mx-0`}
             >
               Discover your way to success with Fametonic:
             </p>
@@ -53,8 +53,8 @@ const HomePage = () => {
               </p>
             ))}
           </div>
-          <div className="mt-6 space-y-6 flex flex-col">
-            <div className="order-2 md:order-1 w-full md:w-[313px] mt-5 md:mt-0">
+          <div className="mt-5 md:mt-7 space-y-6 flex flex-col">
+            <div className="order-2 md:order-1 w-full md:w-[313px] mt-3 md:mt-0">
               <button
                 style={{
                   background: "#FC004E",
