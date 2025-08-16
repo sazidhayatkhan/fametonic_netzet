@@ -5,15 +5,7 @@ import { descData } from "@/data/heroDescData";
 
 const HomePage = () => {
   return (
-    //  style={{
-    //       backgroundImage: `
-    //   url('/images/bg.jpg')
-    // `,
-    //       backgroundSize: "cover",
-    //       backgroundPosition: "center",
-    //     }}
-      <div className="container grid grid-cols-1 md:grid-cols-2 items-center relative"
-      >
+      <div className="container relative">
         <div className="block md:hidden max-w-[19rem] mx-auto">
           <Image
             src="/images/hero_img.webp"
@@ -24,7 +16,17 @@ const HomePage = () => {
             className="w-full aspect-[12/11] object-cover"
           />
         </div>
-        <div className="pt-0 md:pt-4 z-20">
+        <div className="z-10 hidden md:block absolute top-[-70px] right-[-103px]">
+          <Image
+            src="/images/hero_img.webp"
+            alt="hero_img"
+            width={666}
+            height={679}
+            priority
+            className="w-full h-[679px] object-cover"
+          />
+        </div>
+        <div className="relative z-20 pt-0 md:pt-8 max-w-full md:max-w-[33rem]">
           <div className="">
             <h2
               className={`${urbanist.className} text-2xl md:text-4xl font-extrabold md:font-bold text-center md:text-start max-w-[19rem] md:max-w-full mx-auto md:mx-0`}
@@ -51,25 +53,25 @@ const HomePage = () => {
               </p>
             ))}
           </div>
-          <div className="mt-5 space-y-6 flex flex-col">
+          <div className="mt-6 space-y-6 flex flex-col">
             <div className="order-2 md:order-1 w-full md:w-[313px] mt-5 md:mt-0">
               <button
                 style={{
                   background: "#FC004E",
                   boxShadow: "2px 2px 10px 0px #00E7F9",
                 }}
-                className="bg-[#FC004E] text-white text-xl font-bold h-[40px] w-full flex justify-center items-center gap-1 rounded-[10px] cursor-pointer"
+                className="bg-[#FC004E] text-white text-xl font-bold h-[40px] w-full flex justify-center items-center gap-2 rounded-[10px] cursor-pointer"
               >
                 GET STARTED
                 <span>
-                  <img src="/icons/right.svg" alt="arrow" className="w-3 h-3" />
+                  <img src="/icons/right.svg" alt="arrow" className="w-[13px] h-[14px]" />
                 </span>
               </button>
               <p className="mt-3 text-center font-normal text-xs">
                 1-minute quiz for personalized Insights
               </p>
             </div>
-            <div className="order-1 md:order-2 space-y-3">
+            <div className="order-1 md:order-2 space-y-5 md:space-y-2">
               <p className="text-xs font-medium text-[#ABABAB] text-center md:text-start max-w-[21rem] md:max-w-full mx-auto">
                 By clicking "Get Started", you agree with Terms and Conditions,
                 Privacy Policy, Subscription Terms
@@ -87,16 +89,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="hidden md:block z-10 absolute top-[-70px] right-[-110px]">
-          <Image
-            src="/images/hero_img.webp"
-            alt="hero_img"
-            width={666}
-            height={679}
-            priority
-            className="w-full h-[679px] object-cover"
-          />
-        </div>
+        
       </div>
   );
 };
