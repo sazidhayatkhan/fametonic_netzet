@@ -71,7 +71,7 @@ const HomePage = () => {
                 1-minute quiz for personalized Insights
               </p>
             </div>
-            <div className="order-1 md:order-2 space-y-3">
+            <div className="order-1 md:order-2 space-y-5 md:space-y-3">
               <p className="text-xs font-medium text-[#ABABAB] text-center md:text-start max-w-[21rem] md:max-w-full mx-auto">
                 By clicking "Get Started", you agree with Terms and Conditions,
                 Privacy Policy, Subscription Terms
