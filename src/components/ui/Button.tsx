@@ -18,7 +18,7 @@ export default function Button({
   return (
     <button
       className={clsx(
-        "bg-[#FC004E] text-white text-xl font-bold h-[40px] w-full",
+        "bg-neon-pink text-white text-xl font-bold h-[40px] w-full",
         "flex justify-center items-center gap-2 rounded-[10px] cursor-pointer",
         "shadow-[2px_2px_10px_0px_#00E7F9]",
         className

@@ -3,12 +3,17 @@
 :root {
   --background: #010101;
   --foreground: #ffffff;
+
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 @theme {
   --text-4xl: 35px;
+  --color-neon-blue: #00E7F9;
+  --color-neon-pink: #FC004E;
 }
 
 body {
