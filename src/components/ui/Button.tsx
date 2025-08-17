@@ -1,4 +1,5 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
+import clsx from "clsx";
 
 type ButtonProps = {
   children: ReactNode;
@@ -16,7 +17,12 @@ export default function Button({
 }: ButtonProps) {
   return (
     <button
-      className={`bg-[#FC004E] text-white text-xl font-bold h-[40px] w-full flex justify-center items-center gap-2 rounded-[10px] cursor-pointer shadow-[2px_2px_10px_0px_#00E7F9] ${className}`}
+      className={clsx(
+        "bg-neon-pink text-white text-xl font-bold h-[40px] w-full",
+        "flex justify-center items-center gap-2 rounded-[10px] cursor-pointer",
+        "shadow-[2px_2px_10px_0px_#00E7F9]",
+        className
+      )}
       {...props}
     >
       {children}
