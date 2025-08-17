@@ -8,9 +8,10 @@ const HeroImage = () => {
           <Image
             src="/images/hero_img.webp"
             alt="hero_img"
-            width={666}
-            height={679}
+            width={0}
+            height={0}
             priority
+            sizes="100vw"
             className="w-full aspect-[12/11] object-cover"
           />
         </div>
@@ -18,10 +19,11 @@ const HeroImage = () => {
           <Image
             src="/images/hero_img.webp"
             alt="hero_img"
-            width={666}
-            height={679}
+            width={0}
+            height={0}
+            sizes="100vw"
             priority
-            className="w-full h-[679px] object-cover"
+            className="w-[685px] h-auto object-cover"
           />
         </div>
     </div>
